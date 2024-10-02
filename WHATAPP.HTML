@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones de Contacto</title>
+    <script>
+        function elegirOpcion() {
+            let opcion = prompt("Elige una opción: 1) Árbol Genealógico  2) Llamada  3) Venta");
+            
+            if (opcion === "1") {
+                // Enviar mensaje sobre Árbol Genealógico
+                window.location.href = "https://wa.me/51992218793?text=Hola,%20me%20interesa%20el%20servicio%20de%20Árbol%20Genealógico";
+            } else if (opcion === "2") {
+                // Realizar llamada
+                window.location.href = "tel:+51992218793";
+            } else if (opcion === "3") {
+                // Enviar mensaje sobre venta
+                window.location.href = "https://wa.me/51992218793?text=Hola,%20me%20interesa%20información%20sobre%20las%20ventas";
+            } else {
+                alert("Opción no válida, por favor intenta de nuevo.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <a href="#" onclick="elegirOpcion()">Contactar</a>
+
+</body>
+</html>
